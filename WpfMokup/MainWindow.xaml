@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfMokup.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfMokup"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Welcome!" HorizontalAlignment="Left" Margin="325,10,0,0" VerticalAlignment="Top" Height="41" Width="148" FontSize="20" FontWeight="Bold"/>
+        <Label Content="First name:" HorizontalAlignment="Left" Margin="115,75,0,0" VerticalAlignment="Top" Height="45" Width="95" FontSize="14"/>
+        <Label Content="Last name:" HorizontalAlignment="Left" Margin="115,140,0,0" VerticalAlignment="Top" Height="45" Width="95" FontSize="14"/>
+        <Label Content="Date of birth:" HorizontalAlignment="Left" Margin="115,220,0,0" VerticalAlignment="Top" Height="45" Width="95" FontSize="14"/>
+        <TextBox Name="txtNome" HorizontalAlignment="Left" Height="45" Margin="325,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtCognome" HorizontalAlignment="Left" Height="45" Margin="325,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <DatePicker Name="dtPicker" HorizontalAlignment="Left" Margin="325,220,0,0" VerticalAlignment="Top" Height="35" Width="170"/>
+        <CheckBox Name="checkbox" Content="I agree to give my information" HorizontalAlignment="Left" Margin="280,285,0,0" VerticalAlignment="Top" Height="30" Width="215" FontSize="14" Checked="checkbox_Checked"/>
+        <Button Content="Greet!" HorizontalAlignment="Left" Margin="210,315,0,0" VerticalAlignment="Top" Width="90" Height="42" FontSize="16" Click="Greet_Click"/>
+        <Button Name="btnPrint" IsEnabled="False" Content="Print" HorizontalAlignment="Left" Margin="445,315,0,0" VerticalAlignment="Top" Width="90" Height="42" FontSize="16" Click="Print_Click"/>
+
+    </Grid>
+</Window>
